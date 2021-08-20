@@ -9,7 +9,7 @@ s3_client = boto3.client('s3')
 ##print(df)
 
 
-s3_client.upload_file("D:/Documentos/Treinamento/IGTI/Engenharia de Dados Cloud/1 Módulo - Fundamentos em arquitetura de dados e soluções em Nuvem/1.Code/MICRODADOS_ENEM_2019.csv",
+##s3_client.upload_file("D:/Documentos/Treinamento/IGTI/Engenharia de Dados Cloud/1 Módulo - Fundamentos em arquitetura de dados e soluções em Nuvem/1.Code/MICRODADOS_ENEM_2019.csv",
                     "datalake-bruno-361571665651",
                     "raw_data/enem/year=2019/MICRODADOS_ENEM_2019.csv")
                     
