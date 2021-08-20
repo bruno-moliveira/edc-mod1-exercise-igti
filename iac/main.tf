@@ -21,17 +21,4 @@ resource "aws_s3_bucket" "datalake" {
 
 }
 
-resource "aws_s3_bucket_object" "codigo_spark" {
-  bucket = aws_s3_bucket.datalake.id
-  key    = "emr-code/pyspark/job_spark_from_tf.py"
-  acl    = "private"
-  source = "D:/Documentos/Treinamento/IGTI/Engenharia de Dados Cloud/1 Módulo - Fundamentos em arquitetura de dados e soluções em Nuvem/1.Code/job_spark_emr.py"
-  etag   = filemd5("D:/Documentos/Treinamento/IGTI/Engenharia de Dados Cloud/1 Módulo - Fundamentos em arquitetura de dados e soluções em Nuvem/1.Code/job_spark_emr.py")
-
-}
-
-provider "aws" {
-  region = "us-east-2"
-}
-
 
