@@ -1,5 +1,5 @@
 variable "base_bucket_name" {
-  default = "datalake-bruno-tf"
+  default = "datalake-bruno-tf-esteira"
 }
 
 variable "ambiente" {
@@ -8,4 +8,8 @@ variable "ambiente" {
 
 variable "numero_conta" {
   default = "361571665651"
+}
+
+variable "aws_region" {
+  default = "us-east-2"
 }
